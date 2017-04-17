@@ -1,0 +1,11 @@
+
+
+  - command: /bin/false
+    register: result
+    ignore_error: True
+
+  - command : /bin/something
+    when : result|failed
+
+  - command: /bin/something_else
+    when: result|succeeded

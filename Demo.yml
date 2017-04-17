@@ -1,0 +1,27 @@
+---
+ 
+- hosts: "{{target}}"
+  user: "{{user}}"
+  become: yes
+  tasks:
+    - name: Install VIM
+      apt: pkg=vim state=present
+  
+  roles:
+      - WithItems
+#     - CreateDir-Files
+#     - CreateFile
+#     - Apache
+#      - when
+
+#  tasks:
+#  - shell: /bin/false
+#    register: result
+#    ignore_error: True
+
+#  - shell : /bin/something
+#    when : result|failed
+
+#  - shell: /bin/something_else
+#    when: result|succeeded
+

@@ -1,0 +1,7 @@
+---
+
+- file:
+    path: /home/vagrant/Ansible
+    state: directory
+    mode: 0755
+

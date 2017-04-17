@@ -1,0 +1,6 @@
+---
+
+- file:
+    path: /home/vagrant/Ansible/AnsibleDemo
+    state: touch
+    mode: "u=rw,g=r,o=r"
